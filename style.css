@@ -1,16 +1,29 @@
 html,body{
+	font-family: 'Saira', sans-serif;
 	margin:0;
 	padding:0;
+	color: #ffffff;
 	text-align:center;
 	background: url(/game-images/backgroundsw.jpg);
 }
 
+.title {
+	display:block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.textUnder {
+	font-size:30px;
+	color: #ffffff;
+	font-family: 'Saira', sans-serif;
+}
 #canvas-game{
 	margin:0 auto;
 	text-align:left;
 	width:612px;
 	margin-top:20px;
-	border:Solid 1px #ebe5e5;
+	border: 2px #ffffff;
 	height:385px;
 	position:relative;
 }
@@ -22,11 +35,11 @@ html,body{
 	margin-top:20px;
 }
 
-
 #statistic-left, #statistic-right{
 	font-size:22px;
 	float:left;
 	color: #ffffff;
+	font-family: 'Saira', sans-serif;
 }
 
 #statistic-right{
@@ -63,7 +76,7 @@ html,body{
 .box-cover{
 	width:100px;
 	height:75px;
-	background:url(/game-images/backgroundsw.jpg) no-repeat;
+	background:url(./game-images/backofthecard.jpg) no-repeat;
 	border:solid 1px #ebe5e5;
 	float:left;
 	cursor:pointer;
