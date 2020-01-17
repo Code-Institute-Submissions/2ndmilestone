@@ -2,7 +2,7 @@ html,body{
 	margin:0;
 	padding:0;
 	text-align:center;
-	background: url(/img/backgroundsw.jpg);
+	background: url(/game-images/backgroundsw.jpg);
 }
 
 #canvas-game{
@@ -63,7 +63,7 @@ html,body{
 .box-cover{
 	width:100px;
 	height:75px;
-	background:url(img/backgroundsw.jpg) no-repeat;
+	background:url(/game-images/backgroundsw.jpg) no-repeat;
 	border:solid 1px #ebe5e5;
 	float:left;
 	cursor:pointer;
@@ -106,7 +106,7 @@ html,body{
 	}
 	
 	.box-cover{
-		background:url(img/backofthecard.jpg) no-repeat;
+		background:url(game-images/backofthecard.jpg) no-repeat;
 	}
 	
 	#game-statistic{
@@ -132,7 +132,7 @@ html,body{
 	}
 	
 	.box-cover{
-		background:url(img/backofthecard.jpg) no-repeat;
+		background:url(game-images/backofthecard.jpg) no-repeat;
 	}
 	
 	#game-statistic{

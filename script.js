@@ -22,7 +22,8 @@ mandoGame = {
 	
 	//This will load the default game array and perform a shuffle
 	initData: function(){
-		for(var x=0;x<=1;x++){for(var i=0; i<= (noOfBoxGame/2)-1;i++){boxIndexes.push(i);}}
+		for(var x=0;x<=1;x++){
+			for(var i=0; i<= (noOfBoxGame/2)-1;i++){boxIndexes.push(i);}}
 		this.shuffleArray(boxIndexes);
 	},
 	
@@ -85,7 +86,7 @@ mandoGame = {
 							$("#no-of-clicks").html(clickCounter);
 						}
 					}else{
-						//if not the same then close the image cover again.
+						//if not the same then close the image cover again
 						setTimeout(function(){
 							clickImages.forEach(function(item, index){
 								$("#box-cover-" + item.CoverID).removeClass("flipOutX").addClass('animated flipInX'); 
