@@ -6,7 +6,7 @@ html, body {
      padding: 0;
      color: #ffffff;
      text-align: center;
-     background: url(./game-images/backgroundsw.jpg);
+     background: url(./game-images/gamebackground.jpg);
 }
  .title {
      display: block;
