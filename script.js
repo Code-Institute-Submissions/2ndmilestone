@@ -6,6 +6,7 @@ var clickCounter = 0;
 var correctGuess = 0;
 var clickImages = [];
 var timeOutRestore = 1000;
+
 //Page load
 $(function() {
 	//Render the game
