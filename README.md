@@ -1,6 +1,6 @@
 <p align="center">
   <b>The Mandalorian Memory Game</b><br>
-  <a href="https://miadublin.github.io/2ndmilestone/">The Mandalorian Memory Game</a> |
+  <a href="https://miadublin.github.io/2ndmilestone/">The Mandalorian Memory Game</a>
   <br><br>
   <img src="https://user-images.githubusercontent.com/54308513/72657792-b310e180-39a0-11ea-80f2-b17ffac82844.png">
 </p>
@@ -29,10 +29,10 @@ The Wireframes can be viewed [here](https://user-images.githubusercontent.com/54
 
 - The game board consists of thirty cards arranged randomly in a grid. The deck is made up of fifteen different pairs of cards, each with different characters on one side. 
 
-	•	A player flips one card over to reveal its underlying symbol
-	•	The player then turns over a second card, trying to find the corresponding card with the same symbol
-	•	If the cards match, both cards stay flipped over
-	•	If the cards do not match, both cards are returned to their initial hidden state
+- A player flips one card over to reveal its underlying symbol
+- The player then turns over a second card, trying to find the corresponding card with the same symbol
+- If the cards match, both cards stay flipped over
+- If the cards do not match, both cards are returned to their initial hidden state
 
 		
 - The game ends once all cards have been correctly matched.
@@ -55,8 +55,6 @@ The Wireframes can be viewed [here](https://user-images.githubusercontent.com/54
     - The project was built using **VSCode** as a code editor.
 - [jQuery](https://jquery.com)
     - The project uses **JQuery** to make easier to use JavaScript.
-- [PopperJS](https://popper.js.org)
-    - The project uses **PopperJS** to calculate the position of an element to make it possible to position it near a given reference element.
 - [Git](https://git-scm.com)
     - The project uses **Git** for Version Control.
 - [Google Fonts](https://fonts.google.com)
@@ -67,8 +65,9 @@ The Wireframes can be viewed [here](https://user-images.githubusercontent.com/54
 # Aditional resouces and tools:
 - [W3 Schools](https://www.w3schools.com/)
 - [Stackoverflow](https://stackoverflow.com/)
-- [CSS-Tricks](https://css-tricks.com/)
+- [JS Hint](https://jshint.com/)
 - [GitHub](https://github.com/)
+- [Google Chrome Dev Tools](https://www.google.com/chrome/dev/)
    
 ## Testing
 
@@ -84,7 +83,7 @@ I used [Am I Responsive](http://ami.responsivedesign.is/) to check the responsiv
 
 ## Deployment 🚀
 
-# I did this to deploy this website:
+# What i did to deploy this website:
 
 - Created a GitHub repository for the website
 - Clicked in 'Settings' at the repository
