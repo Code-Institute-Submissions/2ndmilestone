@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+
 html,body{
 	font-family: 'Saira', sans-serif;
 	margin:0;
@@ -114,8 +116,8 @@ html,body{
 	}
 	
 	.box-picture, .box-picture > img, .box-cover{
-		width:75px;
-		height:56px;
+		width:102px;
+		height:66px;
 	}
 	
 	.box-cover{

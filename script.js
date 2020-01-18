@@ -1,4 +1,4 @@
-//variables
+//Variables
 var noOfBoxGame = 30;
 var boxIndexes = [];
 var noOfClick = 0;
@@ -7,9 +7,9 @@ var correctGuess = 0;
 var clickImages = [];
 var timeOutRestore = 1000;
 
-//page load
+//Page load
 $(function(){
-	//render the game
+	//Render the game
 	mandoGame.renderGameLayout();
 	
 	$("#btnRestart").on("click", function(){
@@ -17,7 +17,7 @@ $(function(){
 	});
 });
 
-//game class
+//Game class
 mandoGame = {
 	
 	//This will load the default game array and perform a shuffle
@@ -27,7 +27,7 @@ mandoGame = {
 		this.shuffleArray(boxIndexes);
 	},
 	
-	//function to shuffle array
+	//Function to shuffle array
 	shuffleArray: function(array){
 		for (var i = array.length - 1; i > 0; i--) {
 			var j = Math.floor(Math.random() * (i + 1));
@@ -37,12 +37,11 @@ mandoGame = {
 		}
 	},
 	
-	
 	buildGameBox: function(){
 		var boxes = "";
 		var boxCover = "";
 		
-		//load the images and image cover
+		//Load the images and image cover
 		for(var i = 1; i <= noOfBoxGame; i++){
 			boxes += "<div id='box-" + i + "' class='box-picture'><img src='game-images/" + (parseInt(boxIndexes[i-1]) + 1) + ".jpg'/></div>";
 			boxCover += "<div id='box-cover-" + i + "' class='box-cover' data-id='" + (parseInt(boxIndexes[i-1]) + 1) + "'></div>";
@@ -50,7 +49,7 @@ mandoGame = {
 		boxCover = "<div class='box-cover-wrapper'>" + boxCover + "</div>";
 		$("#game-content").html(boxes + boxCover);
 		
-		//add event to click the box cover image
+		//Add event to click the box cover image
 		$(".box-cover").off("click");
 		$(".box-cover").on("click", function(){
 			if(noOfClick <= 1){
@@ -67,16 +66,16 @@ mandoGame = {
 				clickImages.push(clickCover);
 				
 				if(noOfClick >= 2){
-					//check if the revealed images are correct
+					//Check if the revealed images are correct
 					if(clickImages[0].ImageID == clickImages[1].ImageID){
 						correctGuess++;
 						$("#correct-guess").html(correctGuess);
 						
-						//reset the variables
+						//Reset the variables
 						noOfClick = 0;
 						clickImages = [];
 						
-						//if the game is completed then perform a reset
+						//If the game is completed then perform a reset
 						if(correctGuess >= (noOfBoxGame/2)){
 							$("#canvas-game, #game-statistic").fadeOut(1000); 
 							$("#game-message").addClass('animated bounceInDown').css('animation-delay', '1s').show(); 
@@ -86,12 +85,12 @@ mandoGame = {
 							$("#no-of-clicks").html(clickCounter);
 						}
 					}else{
-						//if not the same then close the image cover again
+						//If not the same then close the image cover again
 						setTimeout(function(){
 							clickImages.forEach(function(item, index){
 								$("#box-cover-" + item.CoverID).removeClass("flipOutX").addClass('animated flipInX'); 
 							});
-							//reset
+							//Reset
 							noOfClick = 0;
 							clickImages = [];
 						}, timeOutRestore);
