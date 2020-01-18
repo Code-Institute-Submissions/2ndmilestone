@@ -74,8 +74,9 @@ html, body {
 }
  #game-message {
      margin: 0 auto;
-     font-size: 20px;
-     background: #f7f5b5;
+	 font-size: 20px;
+	 font-family: 'Saira', sans-serif;
+     background: #69492A;
      padding: 15px;
      border: solid 1px #ccc;
      border-radius: 5px;
@@ -83,10 +84,11 @@ html, body {
      display: none;
 }
  #btnRestart {
-     padding: 15px;
+	 padding: 15px;
+	 font-family: 'Saira', sans-serif;
      font-weight: bold;
      text-align: center;
-     background: #043255;
+     background: #2D2D2D;
      text-decoration: uppercase;
      margin-top: 20px;
      color: #fff;
