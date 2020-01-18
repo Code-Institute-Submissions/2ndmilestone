@@ -80,7 +80,8 @@ html, body {
      padding: 15px;
      border: solid 1px #ccc;
      border-radius: 5px;
-     width: 612px;
+	 width: 612px;
+	 color: #ffffff;
      display: none;
 }
  #btnRestart {
@@ -89,7 +90,6 @@ html, body {
      font-weight: bold;
      text-align: center;
      background: #2D2D2D;
-     text-decoration: uppercase;
      margin-top: 20px;
      color: #fff;
      border: none;
